@@ -1,0 +1,92 @@
+<div class="row">
+  <div class="col-md-3">
+
+  </div>
+
+  <div class="col-md-6">
+    <div class="container my-5">
+      <h1 class="text-center fw-bolder"><u>Apply For Bank Account</u></h1><br>
+
+      <form (ngSubmit)="insert()">
+        <div class="p-3" style="border-radius: 20px; background-color: rgb(165, 203, 135);">
+          <div class="mb-3">
+            <label for="nid" class="form-label fw-bolder">NID Number</label>
+            <input type="text" class="form-control" id="nid" name="nid" [(ngModel)]="nid"
+              placeholder="enter your NID number">
+          </div>
+
+          <div class="mb-3">
+            <label for="acctype" class="form-label fw-bolder">Account Type</label>
+            <select class="form-select" id="acctype" name="acctype" [(ngModel)]="acctype">
+              <option value="Checking Account">Checking Account</option>
+              <option value="Savings Account">Savings Account</option>
+              <option value="Certificate of Deposit(CD)">Certificate of Deposit(CD)</option>
+              <option value="Money Marjet Account">Money Marjet Account</option>
+              <option value="IRA">IRA</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="name" class="form-label fw-bolder">Name</label>
+            <input type="text" class="form-control" id="name" name="name" [(ngModel)]="name"
+              placeholder="enter your name">
+          </div>
+                 
+          <div class="mb-3">
+            <label for="gender" class="form-label fw-bolder">Gender</label>
+            <select class="form-select" id="gender" name="gender" [(ngModel)]="gender">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Others">Others</option>    
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="mobile" class="form-label fw-bolder">Mobile</label>
+            <input type="text" class="form-control" id="mobile" name="mobile" [(ngModel)]="mobile"
+              placeholder="enter your mobile number">
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label fw-bolder">Email</label>
+            <input type="text" class="form-control" id="email" name="email" [(ngModel)]="email"
+              placeholder="enter your email">
+          </div>
+
+          <div class="mb-3">
+            <label for="address" class="form-label fw-bolder">Address</label>
+            <input type="text" class="form-control" id="address" name="address" [(ngModel)]="address"
+              placeholder="enter your address">
+          </div>
+
+          <div class="mb-3">
+            <label for="date" class="form-label fw-bolder">Date</label>
+            <input type="date" class="form-control" id="date" name="date" [(ngModel)]="date">
+          </div>
+
+          <div class="mb-3">
+            <label for="mar_status" class="form-label fw-bolder">Marital Status</label>
+            <select class="form-select" id="mar_status" name="mar_status" [(ngModel)]="mar_status">
+              <option value="Married">Married</option>
+              <option value="Single">Single</option>
+              <option value="Separated">Separated</option>
+              <option value="Divorced">Divorced</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="occupation" class="form-label fw-bolder">Occupation</label>
+            <input type="text" class="form-control" id="occupation" name="occupation" [(ngModel)]="occupation">
+          </div>
+
+        </div>
+        <button type="submit" class="btn btn-outline-success fw-bolder mt-3 d-block m-auto px-5">Apply</button>
+      </form>
+
+    </div>
+  </div>
+
+  <div class="col-md-3">
+
+  </div>
+</div>

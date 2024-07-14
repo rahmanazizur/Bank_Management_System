@@ -1,0 +1,68 @@
+<div class="container-fluid my-5">
+  <div>
+    <span><button type="button" class="btn btn-danger fw-bolder px-5" (click)="back()">Back</button></span>
+    <h1 class="text-center mb-4 fw-bolder"><u>Loan Accounts Table</u></h1>
+  </div>
+
+
+
+  <table class="table stripe">
+    <tr style="background-color: rgb(57, 176, 81);">
+      <th class="fw-bolder">Account Number</th>
+      <th>Password</th>
+      <th>NID No.</th>
+      <th>Loan type</th>
+      <th>Require Amount(tk)</th>
+      <th>Duration(years)</th>
+      <th>Cash(tk)</th>
+      <th>Interest Rate(%)</th>
+      <th>Total Amount(tk)</th>
+      <th>Installment</th>
+      <th>Paid Installment</th>
+      <th>Monthly Paid(tk)</th>
+      <th>Paid Amount(tk)</th>
+      <th>Due(tk)</th>
+      <th>Name</th>
+      <th>Gender</th>
+      <th>Mobile</th>
+      <th>Email</th>
+      <th>Address</th>
+      <th>Date</th>
+      <th>Marital Status</th>
+      <th>Occupation</th>
+      <th>Account Delete</th>
+    </tr>
+
+    <tr *ngFor="let i of getAllData" style="background-color: rgb(229, 238, 150);">
+      <td>{{i.accnumber}}</td>
+      <td>{{i.password}}</td>
+      <td>{{i.nid}}</td>
+      <td>{{i.loantype}}</td>
+      <td>{{i.req_amount}}</td>
+      <td>{{i.duration}}</td>
+      <td>{{i.cash}}</td>
+      <td>{{i.interest_rate}}</td>
+      <td>{{i.total_amount}}</td>
+      <td>{{i.installment}}</td>
+      <td>{{i.paid_installment}}</td>
+      <td>{{i.monthlypaid}}</td>
+      <td>{{i.paid_amount}}</td>
+      <td>{{i.due}}</td>
+      <td>{{i.name}}</td>
+      <td>{{i.gender}}</td>
+      <td>{{i.mobile}}</td>
+      <td>{{i.email}}</td>
+      <td>{{i.address}}</td>
+      <td>{{i.date}}</td>
+      <td>{{i.mar_status}}</td>
+      <td>{{i.occupation}}</td>
+      <td>
+        <button type="button" class="btn btn-outline-danger fw-bolder mt-2" (click)="delete(i.accnumber)"><i class="fa-solid fa-trash"></i></button>
+      </td>
+
+    </tr>
+  </table>
+</div>
+
+<!-- (click)="search(i.nid)"
+(click)="delete(i.nid)" -->

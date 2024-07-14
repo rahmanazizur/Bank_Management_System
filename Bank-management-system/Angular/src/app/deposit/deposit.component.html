@@ -1,0 +1,50 @@
+<app-admin-header></app-admin-header>
+<!-- ------------------------------------------------------------------------------------------------ -->
+<div class="row">
+  <div class="col-md-2">
+    <app-admin-sidebar></app-admin-sidebar>
+  </div>
+
+  <div class="col-md-10">
+
+    <div class="container mt-5 border-0 shadow"
+      style="background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2ZsMjM0MTcwNjg4MTItaW1hZ2Uta3FhcDlyZHcuanBn.jpg'); border-radius: 40px;">
+      <div class="row">
+        <div class="col-md-2">
+
+        </div>
+
+        <div class="col-md-8 my-5">
+          <br><br>
+          <h3 class="text-center text-light fw-bolder">Deposit in Customer Account</h3><br>
+          <div>
+            <form (ngSubmit)="addBalance()">
+              <div class="bg-warning-subtle p-3 rounded">
+
+                <div class="mb-3">
+                  <label for="a_number" class="form-label fw-bolder">Account Number</label>
+                  <input type="text" class="form-control ps-3" id="a_number" name="a_number" [(ngModel)]="a_number"
+                    placeholder="enter your account number">
+                </div>
+
+                <div class="mb-3">
+                  <label for="deposit" class="form-label fw-bolder">Deposit amount</label>
+                  <input type="text" class="form-control " id="deposit" name="deposit" [(ngModel)]="deposit"
+                    placeholder="Add deposit">
+                </div>
+
+              </div>
+
+              <button type="submit"
+                class="btn btn-primary text-white d-block px-5  m-auto fw-bolder mt-2">Deposit</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+
+        </div>
+
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,67 @@
+<app-userheader></app-userheader>
+<!-- ------------------------------------------------------------------------------------------------ -->
+<div class="row">
+  <div class="col-md-2">
+    <app-usersidebar></app-usersidebar>
+  </div>
+
+  <div class="col-md-9">
+
+    <div class="container mt-4 border-0 shadow"
+      style="background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2ZsMjM0MTcwNjg4MTItaW1hZ2Uta3FhcDlyZHcuanBn.jpg'); border-radius: 65px;">
+      <div class="row">
+        <div class="col-md-2">
+
+        </div>
+
+        <div class="col-md-8 my-5">
+          <h3 class="text-center  fw-bolder text-light">Money Transfer</h3><br>
+          <div>
+            <form (ngSubmit)="transferamount()">
+              <div class="bg-warning-subtle p-3" style="border-radius: 40px;">
+
+                <div class="mb-3">
+                  <label for="fromaccount" class="form-label fw-bolder">From Account Number</label>
+                  <input type="text" class="form-control ps-3" id="fromaccount" name="fromaccount"
+                    [(ngModel)]="fromaccount" placeholder="enter account number">
+                </div>
+
+                <div class="mb-3">
+                  <label for="toaccount" class="form-label fw-bolder"> To Account Number</label>
+                  <input type="text" class="form-control ps-3" id="toaccount" name="toaccount" [(ngModel)]="toaccount"
+                    placeholder="enter account number">
+                </div>
+
+                <div class="mb-3">
+                  <label for="transfer" class="form-label fw-bolder">Transfer amount</label>
+                  <input type="text" class="form-control " id="transfer" name="transfer" [(ngModel)]="transfer"
+                    placeholder="enter amount">
+                </div>
+
+                <div class="mb-3">
+                  <label for="password" class="form-label fw-bolder">Password</label>
+                  <input type="password" class="form-control " id="password" name="password" [(ngModel)]="password"
+                    placeholder="enter - from account password">
+                </div>
+
+              </div><br>
+
+              <button type="submit"
+                class="btn btn-primary text-white d-block px-5  m-auto fw-bolder mt-2">Transfer</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-1">
+
+  </div>
+
+</div>

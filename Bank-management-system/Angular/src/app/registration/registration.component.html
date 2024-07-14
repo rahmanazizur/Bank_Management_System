@@ -1,0 +1,57 @@
+<div class="row">
+  <div class="col-md-3">
+
+  </div>
+
+  <div class="col-md-6">
+    <div class="container my-5">
+      <h1 class="text-center fw-bolder">Create an Account</h1><br>
+
+      <form (ngSubmit)="insert()">
+        <div class="bg-success-subtle p-3 rounded">
+          <div class="mb-3">
+            <label for="a_number" class="form-label fw-bolder">Account Number</label>
+            <input type="text" class="form-control" id="a_number" name="a_number" [(ngModel)]="a_number" placeholder="enter your account number">
+          </div>
+
+          <div class="mb-3">
+            <label for="name" class="form-label fw-bolder">Name</label>
+            <input type="text" class="form-control" id="name" name="name" [(ngModel)]="name" placeholder="enter your name">
+          </div>
+
+          <div class="mb-3">
+            <label for="gender" class="form-label fw-bolder">Gender</label>
+            <input type="text" class="form-control" id="gender" name="gender" [(ngModel)]="gender" placeholder="male/female">
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label fw-bolder">Email</label>
+            <input type="text" class="form-control" id="email" name="email" [(ngModel)]="email" placeholder="enter your email">
+          </div>
+
+          <div class="mb-3">
+            <label for="password" class="form-label fw-bolder">Password</label>
+            <input type="text" class="form-control" id="password" name="password" [(ngModel)]="password" placeholder="enter your password">
+          </div>
+
+          <div class="mb-3">
+            <label for="phone" class="form-label fw-bolder">Phone</label>
+            <input type="text" class="form-control" id="phone" name="phone" [(ngModel)]="phone" placeholder="enter your phone">
+          </div>
+
+          <div class="mb-3">
+            <label for="balance" class="form-label fw-bolder">Balance</label>
+            <input type="text" class="form-control" id="balance" name="balance" [(ngModel)]="balance" placeholder="enter your balance">
+          </div>
+
+        </div>
+        <button type="submit" class="btn btn-outline-primary fw-bolder mt-3 d-block m-auto px-5">Submit</button>
+      </form>
+
+    </div>
+  </div>
+
+  <div class="col-md-3">
+
+  </div>
+</div>

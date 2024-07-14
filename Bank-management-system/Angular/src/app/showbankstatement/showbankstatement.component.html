@@ -1,0 +1,42 @@
+
+<app-admin-header></app-admin-header>
+<!-- --------------------------------------------------- -->
+<div class="row">
+  <div class="col-md-2">
+    <app-admin-sidebar></app-admin-sidebar>
+  </div>
+
+  <div class="col-md-10">
+    <div class="container mt-5">
+      <h1 class="text-center mb-3 fw-bolder">Bank Statement</h1>
+      <table>
+        <tr class="bg-success text-light">
+          <th class="fw-bolder">Transaction Id</th>
+          <th>Transaction Type</th>
+          <th>Account Number</th>
+          <th>Account Type</th>
+          <th>Previous Balance</th>
+          <th>Transaction Amount</th>
+          <th>Current Balance</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Transfer Account</th>
+        </tr>
+    
+        <tr *ngFor="let i of allData" class="bg-success-subtle">
+          <td>{{i.tid}}</td>
+          <td>{{i.ttype}}</td>
+          <td>{{i.a_number}}</td>
+          <td>{{i.a_type}}</td>
+          <td>{{i.prebalance}}</td>
+          <td>{{i.tamount}}</td>
+          <td>{{i.curbalance}}</td>
+          <td>{{i.date}}</td>
+          <td>{{i.time}}</td>
+          <td>{{i.toacc_number}}</td>
+        </tr>
+    
+      </table>
+    </div>
+
+  </div>

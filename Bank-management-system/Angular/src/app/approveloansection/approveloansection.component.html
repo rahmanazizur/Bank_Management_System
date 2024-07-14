@@ -1,0 +1,135 @@
+<div class="row">
+  <div class="col-md-3">
+
+  </div>
+
+  <div class="col-md-6">
+    <div class="container my-5">
+      <h1 class="text-center fw-bolder">Loan approval Form</h1><br>
+
+      <form (ngSubmit)="create()">
+        <div class="bg-warning-subtle p-3 rounded">
+
+          <div class="mb-3">
+            <label for="accnumber" class="form-label fw-bolder">Account Number</label>
+            <input type="text" class="form-control" id="accnumber" name="accnumber" [(ngModel)]="accnumber">
+          </div>
+
+          <div class="mb-3">
+            <label for="password" class="form-label fw-bolder">Password</label>
+            <input type="text" class="form-control" id="password" name="password" [(ngModel)]="password">
+          </div>
+
+          <div class="mb-3">
+            <label for="nid" class="form-label fw-bolder">NID Number</label>
+            <input type="text" class="form-control" id="nid" name="nid" [(ngModel)]="nid">
+          </div>
+
+          <div class="mb-3">
+            <label for="loantype" class="form-label fw-bolder">Loan Type </label>
+            <input type="text" class="form-control" id="loantype" name="loantype" [(ngModel)]="loantype">
+          </div>
+
+          <div class="mb-3">
+            <label for="req_amount" class="form-label fw-bolder">Require Amount(tk)</label>
+            <input type="text" class="form-control" id="req_amount" name="req_amount" [(ngModel)]="req_amount">
+          </div>
+
+          <div class="mb-3">
+            <label for="duration" class="form-label fw-bolder">Duration(year)</label>
+            <input type="text" class="form-control" id="duration" name="duration" [(ngModel)]="duration">
+          </div>
+
+          <div class="mb-3">
+            <label for="cash" class="form-label fw-bolder">Cash(tk)</label>
+            <input type="text" class="form-control" id="cash" name="cash" [(ngModel)]="cash">
+          </div>
+
+          <div class="mb-3">
+            <label for="interest_rate" class="form-label fw-bolder">Interest Rate(%)</label>
+            <input type="text" class="form-control" id="interest_rate" name="interest_rate" [(ngModel)]="interest_rate">
+          </div>
+
+          <div class="mb-3">
+            <label for="total_amount" class="form-label fw-bolder">Total Amount(tk)</label>
+            <input type="text" class="form-control" id="total_amount" name="total_amount" [(ngModel)]="total_amount">
+          </div>
+
+          <div class="mb-3">
+            <label for="installment" class="form-label fw-bolder">Installment</label>
+            <input type="text" class="form-control" id="installment" name="installment" [(ngModel)]="installment">
+          </div>
+
+          <div class="mb-3">
+            <label for="paid_installment" class="form-label fw-bolder">Paid Installment</label>
+            <input type="text" class="form-control" id="paid_installment" name="paid_installment"
+              [(ngModel)]="paid_installment">
+          </div>
+
+          <div class="mb-3">
+            <label for="monthlypaid" class="form-label fw-bolder">Monthly Paid(tk)</label>
+            <input type="text" class="form-control" id="monthlypaid" name="monthlypaid" [(ngModel)]="monthlypaid">
+          </div>
+
+          <div class="mb-3">
+            <label for="paid_amount" class="form-label fw-bolder">Paid Amount(tk)</label>
+            <input type="text" class="form-control" id="paid_amount" name="paid_amount" [(ngModel)]="paid_amount">
+          </div>
+
+          <div class="mb-3">
+            <label for="due" class="form-label fw-bolder">Due(tk)</label>
+            <input type="text" class="form-control" id="due" name="due" [(ngModel)]="due">
+          </div>
+
+          <div class="mb-3">
+            <label for="name" class="form-label fw-bolder">Name</label>
+            <input type="text" class="form-control" id="name" name="name" [(ngModel)]="name">
+          </div>
+
+          <div class="mb-3">
+            <label for="gender" class="form-label fw-bolder">Gender</label>
+            <input type="text" class="form-control" id="gender" name="gender" [(ngModel)]="gender">
+          </div>
+
+          <div class="mb-3">
+            <label for="mobile" class="form-label fw-bolder">Mobile</label>
+            <input type="text" class="form-control" id="mobile" name="mobile" [(ngModel)]="mobile">
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label fw-bolder">Email</label>
+            <input type="text" class="form-control" id="email" name="email" [(ngModel)]="email">
+          </div>
+
+          <div class="mb-3">
+            <label for="address" class="form-label fw-bolder">Address</label>
+            <input type="text" class="form-control" id="address" name="address" [(ngModel)]="address">
+          </div>
+
+          <div class="mb-3">
+            <label for="date" class="form-label fw-bolder">Date</label>
+            <input type="text" class="form-control" id="date" name="date" [(ngModel)]="date">
+          </div>
+
+          <div class="mb-3">
+            <label for="mar_status" class="form-label">Marital Status</label>
+            <input type="text" class="form-control" id="mar_status" name="mar_status" [(ngModel)]="mar_status">
+          </div>
+
+          <div class="mb-3">
+            <label for="occupation" class="form-label fw-bolder">Occupation</label>
+            <input type="text" class="form-control" id="occupation" name="occupation" [(ngModel)]="occupation">
+          </div>
+
+        </div>
+        <button type="submit" class="btn btn-outline-success fw-bolder mt-3 d-block m-auto px-5"
+          (click)="delete()">Submit</button>
+      </form>
+
+    </div>
+  </div>
+
+  <div class="col-md-3">
+
+  </div>
+</div>

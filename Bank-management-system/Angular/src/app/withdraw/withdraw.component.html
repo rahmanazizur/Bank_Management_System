@@ -1,0 +1,45 @@
+<div class="container mt-5 border-0 shadow"
+  style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9AycipWu48BeB_hZdRKUIuwHp_qxjJ4eAKPDj-MZy4OQvmWI1_c-IVQfuqg&s'); border-radius: 60px;">
+  <div class="row">
+    <div class="col-md-2">
+
+    </div>
+
+    <div class="col-md-8 my-5"><br>
+      <h3 class="text-center text-light fw-bolder"> Balance Withdraw</h3><br>
+      <div>
+        <form (ngSubmit)="changeBalance()">
+          <div class="bg-warning-subtle p-3" style="border-radius: 30px;">
+
+            <div class="mb-3">
+              <label for="a_number" class="form-label fw-bolder">Account Number</label>
+              <input type="text" class="form-control ps-3" id="a_number" name="a_number" [(ngModel)]="a_number"
+                placeholder="enter your account number">
+            </div>
+
+            <div class="mb-3">
+              <label for="withdraw" class="form-label fw-bolder">Withdraw amount(tk)</label>
+              <input type="text" class="form-control " id="withdraw" name="withdraw" [(ngModel)]="withdraw"
+                placeholder="enter your amount">
+            </div>
+
+            <div class="mb-3">
+              <label for="password" class="form-label fw-bolder">Password</label>
+              <input type="password" class="form-control " id="password" name="password" [(ngModel)]="password"
+                placeholder="enter your password">
+            </div>
+
+          </div><br><br>
+
+          <button type="submit" class="btn btn-success text-white px-5   fw-bolder mt-2">Withdraw</button>
+          
+        </form>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+
+    </div>
+
+  </div>
+</div>

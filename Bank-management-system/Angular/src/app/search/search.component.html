@@ -1,0 +1,36 @@
+<app-admin-header></app-admin-header>
+<!-- ------------------------------------------------------------------------------------------------ -->
+<div class="row">
+  <div class="col-md-3">
+    <app-admin-sidebar></app-admin-sidebar>
+  </div>
+
+  <div class="col-md-9 mt-5"
+    style="background-image: url('https://img.freepik.com/premium-photo/there-is-dark-picture-mountain-lake-with-boat-it-generative-ai_900814-4276.jpg'); border-radius: 50px;">
+    <div class="row">
+      <div class="col-md-3">
+
+      </div>
+      <div class="col-md-6">
+        <div class="container my-5"><br><br><br>
+          <h3 class="text-center fw-bolder d-block text-light">Search An Account</h3><br>
+          <form (ngSubmit)="search()">
+            <div class="mb-3 bg-warning-subtle p-3 rounded">
+              <label for="a_number" class="form-label fw-bolder">Account Number</label>
+              <input type="text" class="form-control ps-3 mb-2" id="a_number" name="a_number" [(ngModel)]="a_number"
+                placeholder="Enter an account number">
+            </div>
+
+            <button type="submit" class="btn btn-outline-danger  d-block px-5 m-auto fw-bolder mt-2">Search</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+
+      </div>
+
+    </div>
+  </div>
+
+</div>

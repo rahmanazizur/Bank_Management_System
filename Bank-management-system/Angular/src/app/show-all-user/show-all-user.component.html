@@ -1,0 +1,60 @@
+<app-admin-header></app-admin-header>
+<!-- ------------------------------------------------------------------------------------------------  -->
+<div class="row">
+  <div class="col-md-2">
+    <app-admin-sidebar></app-admin-sidebar>
+  </div>
+
+  <div class="col-md-10">
+    <div class="container my-5">
+      <h1 class="text-center mb-4 text-success"><u>Customer Accounts details</u></h1>
+      <table>
+        <tr class="bg-success text-light">
+          <th class="fw-bolder">Account Number</th>
+          <th>Password</th>
+          <th>NID Number</th>
+          <th>Account Type</th>
+          <th>Name</th>
+          <th>Gender</th>
+          <th>Mobile</th>
+          <th>Email</th>
+          <th>Address</th>
+          <th>Date</th>
+          <th>Marital Status</th>
+          <th>Occupation</th>
+          <th>Balance</th>
+          <th>Account Update</th>
+          <th>Account Delete</th>
+        </tr>
+
+        <tr *ngFor="let i of getAllData" class="bg-success-subtle">
+          <td>{{i.a_number}}</td>
+          <td>{{i.password}}</td>
+          <td>{{i.nid}}</td>
+          <td>{{i.acctype}}</td>
+          <td>{{i.name}}</td>
+          <td>{{i.gender}}</td>
+          <td>{{i.mobile}}</td>
+          <td>{{i.email}}</td>
+          <td>{{i.address}}</td>
+          <td>{{i.date}}</td>
+          <td>{{i.mar_status}}</td>
+          <td>{{i.occupation}}</td>
+          <td>{{i.balance}}</td>
+
+          <td>
+            <button type="button" class="btn btn-success border-0 fw-bolder"
+              (click)="search(i.a_number)"><small>Update</small></button>
+          </td>
+          <td>
+            <button type="button" class="btn btn-danger border-0 mt-1 fw-bolder"
+              (click)="delete(i.a_number)"><small>Delete</small></button>
+          </td>
+
+        </tr>
+      </table>
+    </div>
+
+  </div>
+
+</div>

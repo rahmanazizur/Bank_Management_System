@@ -1,0 +1,39 @@
+<div class="container mt-5 border-0 shadow rounded"
+  style="background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2ZsMjM0MTcwNjg4MTItaW1hZ2Uta3FhcDlyZHcuanBn.jpg');">
+  <div class="row">
+    <div class="col-md-2">
+
+    </div>
+
+    <div class="col-md-8 my-5">
+      <br><br>
+      <h3 class="text-center text-light">Admin Login </h3>
+      <div>
+        <form (ngSubmit)="login()">
+          <div class="bg-warning-subtle p-3 rounded">
+
+            <div class="mb-3">
+              <label for="id" class="form-label fw-bolder">Id</label>
+              <input type="text" class="form-control ps-3" id="id" name="id" [(ngModel)]="id"
+                placeholder="enter your id">
+            </div>
+
+            <div class="mb-3">
+              <label for="password" class="form-label fw-bolder">Password</label>
+              <input type="text" class="form-control " id="password" name="password" [(ngModel)]="password"
+                placeholder="enter your password">
+            </div>
+
+          </div>
+
+          <button type="submit" class="btn btn-primary text-white d-block px-5  m-auto fw-bolder mt-2">Login</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+
+    </div>
+
+  </div>
+</div>

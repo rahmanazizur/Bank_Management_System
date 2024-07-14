@@ -1,0 +1,53 @@
+<app-admin-header></app-admin-header>
+<!-- -------------------------------------------- -->
+<div class="row">
+  <div class="col-md-3">
+    <app-admin-sidebar></app-admin-sidebar>
+  </div>
+
+  <div class="col-md-8">
+    <div class="container mt-5 border-0 shadow rounded-pill"
+      style="background-image: url('https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L2ZsMjM0MTcwNjg4MTItaW1hZ2Uta3FhcDlyZHcuanBn.jpg');">
+      <div class="row">
+        <div class="col-md-3">
+
+        </div>
+
+        <div class="col-md-6 my-5">
+          <br><br>
+          <h3 class="text-center text-light fw-bolder">Installment Payment</h3><br>
+          <div>
+            <form (ngSubmit)="payment()">
+              <div class="bg-warning-subtle p-3 rounded">
+
+                <div class="mb-3">
+                  <label for="accnumber" class="form-label fw-bolder">Account Number</label>
+                  <input type="text" class="form-control ps-3" id="accnumber" name="accnumber" [(ngModel)]="accnumber"
+                    placeholder="enter your account number">
+                </div>
+
+                <div class="mb-3">
+                  <label for="amount" class="form-label fw-bolder">Pay Amount(tk)</label>
+                  <input type="text" class="form-control " id="amount" name="amount" [(ngModel)]="amount"
+                    placeholder="enter amount">
+                </div>
+
+              </div>
+
+              <button type="submit"
+                class="btn btn-primary text-white d-block px-5  m-auto fw-bolder mt-2">Success</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- {{allData | json}} ------------- object dekhe ai babe-->

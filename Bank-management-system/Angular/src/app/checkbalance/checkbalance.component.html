@@ -1,0 +1,38 @@
+<app-userheader></app-userheader>
+<!-- ------------------------------------------------------------------------------------------------ -->
+<div class="row">
+  <div class="col-md-2">
+    <app-usersidebar></app-usersidebar>
+  </div>
+
+  <div class="col-md-10 mt-5">
+    <div class=" container d-flex justify-content-around shadow" style="border-radius: 40px;">
+
+      <div class="col-md-5">
+        <div class="container my-5" style="background-color: rgb(196, 196, 83);  border-radius: 70px;">
+          <h3 class="text-center fw-bolder d-block pt-3">Search An Account</h3><br>
+          <form (ngSubmit)="search()">
+            <div class="mx-3 shadow">
+              <div class="mb-3 bg-warning-subtle p-3 rounded">
+                <label for="a_number" class="form-label fw-bolder">Account Number</label>
+                <input type="text" class="form-control ps-3 mb-2" id="a_number" name="a_number" [(ngModel)]="a_number"
+                  placeholder="Enter an account number">
+              </div>
+
+              <div class="mb-3 bg-warning-subtle p-3 rounded">
+                <label for="password" class="form-label fw-bolder">Password</label>
+                <input type="password" class="form-control ps-3 mb-2" id="password" name="password" [(ngModel)]="password"
+                  placeholder="Enter your password">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-danger  d-block px-5 m-auto fw-bolder ">Search</button>
+          </form><br>
+        </div>
+      </div>
+
+      
+
+    </div>
+  </div>
+
+</div>

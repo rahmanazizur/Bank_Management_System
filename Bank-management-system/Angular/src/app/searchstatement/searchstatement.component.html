@@ -1,0 +1,46 @@
+<app-admin-header></app-admin-header>
+<!-- ------------------------------------------------------------------------------------------------ -->
+<div class="row">
+  <div class="col-md-3">
+    <app-admin-sidebar></app-admin-sidebar>
+  </div>
+
+  <div class="col-md-8">
+    <div class="container mt-5 border-0 shadow"
+      style="background-image: url('https://wpamelia.com/wp-content/uploads/2019/02/7644.jpg'); border-radius: 60px;">
+      <div class="row">
+        <div class="col-md-3">
+
+        </div>
+
+        <div class="col-md-6 my-5"><br>
+          <h3 class="text-center text-light fw-bolder">Loan Statement</h3><br>
+          <div>
+            <form (ngSubmit)="searchloanstatement()">
+              <div class="bg-warning-subtle p-3" style="border-radius: 25px;">
+
+                <div class="mb-3">
+                  <label for="accnumber" class="form-label fw-bolder">Account Number</label>
+                  <input type="text" class="form-control ps-3" id="accnumber" name="accnumber" [(ngModel)]="accnumber"
+                    required placeholder="enter your account number">
+                </div>
+
+              </div><br><br>
+              <button type="submit"
+                class="btn btn-primary text-white px-5 d-flex m-auto  fw-bolder mt-2">Search</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- {{allData | json}} ------------- object dekhe ai babe-->

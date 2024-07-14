@@ -1,0 +1,41 @@
+
+
+<app-admin-header></app-admin-header>
+<!-- --------------------------------------------------- -->
+<div class="row">
+  <div class="col-md-2">
+    <app-admin-sidebar></app-admin-sidebar>
+  </div>
+
+  <div class="col-md-10">
+    <div class="container mt-5">
+      <h1 class="text-center mb-3 fw-bolder">Loan Installment Statement</h1>
+      <table>
+        <tr class="bg-success text-light">
+          <th class="fw-bolder">Transaction Id</th>
+          <th>Account Number</th>
+          <th>Transaction Type</th>
+          <th>Loan Type</th>
+          <th>Total Installment</th>
+          <th>Pay Installment</th>
+          <th>Paid Amount</th>
+          <th>Due Amount</th>
+          <th>Date & Time</th>
+        </tr>
+    
+        <tr *ngFor="let i of getData" class="bg-success-subtle">
+          <td>{{i.tid}}</td>
+          <td>{{i.accnumber}}</td>
+          <td>{{i.ttype}}</td>
+          <td>{{i.loantype}}</td>
+          <td>{{i.totalinstallment}}</td>
+          <td>{{i.payinstallment}}</td>
+          <td>{{i.paidamount}}</td>
+          <td>{{i.dueamount}}</td>
+          <td>{{i.date}}</td>
+        </tr>
+    
+      </table>
+    </div>
+
+  </div>

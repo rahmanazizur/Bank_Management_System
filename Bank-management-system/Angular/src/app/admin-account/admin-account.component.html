@@ -1,0 +1,41 @@
+<app-admin-header></app-admin-header>
+<!-- ------------------------------------------------------------------------------------------------ -->
+<div class="row">
+  <div class="col-md-3">
+    <app-admin-sidebar></app-admin-sidebar>
+  </div>
+
+  <div class="col-md-9">
+    <div class="container my-5">
+      <h1 class="text-center fw-bolder pb-2">Admin Accounts Information</h1>
+      <table class="table stripe">
+        <tr class="bg-primary text-light">
+          <th class="fw-bolder">Id</th>
+          <th>Password</th>
+          <th>Name</th>
+          <th>Gender</th>
+          <th>Email</th>
+          <th>Phone</th>
+          <th>Address</th>
+          <th>Account</th>
+        </tr>
+
+        <tr *ngFor="let i of getAllData" class="bg-primary-subtle">
+          <td>{{i.id}}</td>
+          <td>{{i.password}}</td>
+          <td>{{i.name}}</td>
+          <td>{{i.gender}}</td>
+          <td>{{i.email}}</td>
+          <td>{{i.phone}}</td>
+          <td>{{i.address}}</td>
+          <td>
+            <button type="button" class="btn  border-0" (click)="search(i.id)"
+              style="background-color:rgb(53, 119, 7); color: white;"><i class="fa-sharp fa-solid fa-pen"></i></button>
+            <button type="button" class="btn ms-1 border-0" (click)="delete(i.id)"
+              style="background-color:rgb(204, 16, 10); color: white;"><i class="bi bi-trash-fill"></i></button>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+  </div>

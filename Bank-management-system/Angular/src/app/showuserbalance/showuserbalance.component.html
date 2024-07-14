@@ -1,0 +1,32 @@
+<app-userheader></app-userheader>
+<!-- ------------------------------------------------------------------------------------------------ -->
+<div class="row">
+  <div class="col-md-2">
+    <app-usersidebar></app-usersidebar>
+  </div>
+
+  <div class="col-md-10">
+    <br><br><br>
+   <div class="container">
+    <h1 class="text-center text-danger"><u>Check Customer Balance</u></h1><br><br>
+
+    <table class="table stripe">
+      <tr style="background-color: rgb(6, 92, 92);" class="text-light">
+        <th>Account Number</th>
+        <th>Name</th>
+        <th>Account Type</th>
+        <th>Balance (tk)</th>
+      </tr>
+
+      <tr style="background-color: rgb(225, 192, 149);">
+        <td>{{getData.a_number}}</td>
+        <td>{{getData.name}}</td>
+        <td>{{getData.acctype}}</td>
+        <td>{{getData.balance}}</td>
+      </tr>
+    </table>
+   </div>
+
+  </div>
+
+</div>

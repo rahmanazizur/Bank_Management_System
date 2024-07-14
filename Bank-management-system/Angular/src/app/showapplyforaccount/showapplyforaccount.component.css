@@ -1,0 +1,10 @@
+th,td{
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+table{
+    background-color: rgb(170, 188, 203);
+    border-collapse: collapse;
+
+}
